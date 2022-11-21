@@ -1,0 +1,16 @@
+#table {
+    display: grid;
+    grid-template-columns: repeat(17,auto) 1fr;
+    width: 90%;
+    margin: auto;
+    max-width: 100%;
+}
+
+.element-2 {
+    grid-column-start: -2;
+}
+
+.element-72,
+.element-104 {
+    grid-column-start: 4;
+}

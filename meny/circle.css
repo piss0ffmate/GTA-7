@@ -1,0 +1,52 @@
+div {
+    height: 12.5rem;
+    width: 12.5rem;
+    border: 12px solid;
+    border-radius: 50%;
+    margin: 1rem;
+  }
+
+  .blue {
+    color: #0085C7;
+  }
+
+  .black {
+    color: #000000;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .red {
+    color: #df0024;
+  }
+
+  .yellow {
+    color: #f4c300;
+  }
+
+  .green {
+    color: #009f3d;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+  }
+
+  .bottom {
+    position: relative;
+    right: 8.125rem;
+  }
+
+  @media screen and (max-width: 750px) {
+    div {
+      width: 130px;
+      height: 130px;
+    }
+
+    .bottom {
+      right: 7rem;
+    }
+  }

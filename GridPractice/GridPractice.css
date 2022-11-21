@@ -1,0 +1,16 @@
+div {
+    display: grid;
+    grid-template-columns: repeat(17, auto) 1fr;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.Helium {
+    grid-column-start: -2;
+}
+
+.boron,
+.aluminum {
+    grid-column-start: 13;
+}
