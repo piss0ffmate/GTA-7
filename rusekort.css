@@ -1,0 +1,19 @@
+body { 
+
+    background-color: #cccccc;
+    font-family: Georgia, serif;
+    
+  }
+  #russkort {
+    width: 60%;                 
+    margin: 50px auto;         
+    padding: 40px;	            
+    background-color: rgb(247, 9, 9); 	 
+    border: 1px solid #cccccc;
+  }
+  h1, h2, h3 {
+    font-family: Arial, sans-serif;
+  }
+  .checkboxradio > label {
+    display: block;
+  }

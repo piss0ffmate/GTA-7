@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastRuss</title>
+    <link rel="stylesheet" href="rusekort.css">
+</head>
+
+<body>
+<div>
+    <label>
+        <input type="color" id="backgroundcolor" value="#f5f5f5"> Velg bakgrunnsfarge
+    </label>
+</div>
+
+
+    <div id="russkort" class="checkboxradio">
+        <h1> Russ kort</h1>
+
+        <label for="School">School</label>
+        <input type="text" id="School" placeholder="Videregående">
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Navn her">
+
+        <label for="age">age</label>
+        <input type="number" id="age" placeholder="18 år gamel">
+
+
+        <label for="description">Beskrivelse</label>
+        <textarea id="description" placeholder="Skriv en kort tiller"></textarea>
+
+        <label for="Linea"> Linje </label>
+        <select id="Linea">
+            <option value="Tillatt for alle">Tillatt for alle</option>
+            <option value="Idrett">Idrett</option>
+            <option value="Kunst, design og arkitektur">Kunst, design og arkitektur</option>
+            <option value="Medier og kommunikasjon">medier og kommunikasjon </option>
+            <option value="Musikk, dans og drama ">Musikk, dans og drama </option>
+            <option value="Studiespesialisering">Studiespesialisering</option>
+        </select>
+
+
+    
+            <label for="numberofmembers">Number of members</label>
+            <input type="number" id="numberofmembers">
+          
+            <label for="howmanyeach">how many each one want</label>
+            <input type="number" id="howmanyeach">
+
+
+            <button id="finnsummen">Finn summen</button>
+          
+            <p id="results"></p>
+
+          
+<script>
+
+let thenumber1 = document.querySelector("#numberofmembers");
+let thenumber2 = document.querySelector("#howmanyeach");
+let theresult = document.querySelector("#results");
+let button = document.querySelector("#finnsummen");
+
+
+button.addEventListener("click", calculate);
+
+function calculate() {
+  let number1 = Number(thenumber1.value);
+  let number2= Number(thenumber2.value);
+  let sum = number1 * number2;
+
+  theresult.innerHTML = "The total cards needed are: " + sum;
+}
+ 
+
+
+let cardcolor = document.querySelector("#russkort");
+let thecolor = document.querySelector("#backgroundcolor");
+
+thecolor.addEventListener("input", changecolor);
+
+function changecolor() {
+  let color = thecolor.value;
+cardcolor.style.backgroundColor = color;
+ 
+}
+
+</script>
+
+<label>
+    <input type="checkbox" value="Freeshipping" id="freeshipping"> Free shippping
+  </label>
+
+    </div>
+
+</body>
+
+</html>
