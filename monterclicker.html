@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Clicker</title>
+</head>
+
+<link rel="stylesheet" href="monter-clicker.css">
+
+<body background="cookiemonster1.jpg">
+   
+    <div class="main" id="hoved">
+        <h1> Click to feed Cookie Monster </h1>
+      </div>
+
+<script>
+
+let overskriftEl = document.querySelector("h1");
+let hoved = document.querySelector("#hoved");
+let background = document.querySelector("#body");
+overskriftEl.addEventListener("click", skrivAntall);
+
+let antallTrykk = 0;
+
+function skrivAntall() {
+    antallTrykk++;
+    overskriftEl.innerHTML = " cookies given:" + antallTrykk + " Give more cookies!";
+
+
+    if (antallTrykk == 25) {
+        hoved.style.top = 400 + "px"
+        hoved.style.left = 100 + "px"
+        document.body.background = "cookiemonster2.jpg";
+
+
+    }
+    if (antallTrykk == 50) {
+        hoved.style.top = 200 + "px"
+        hoved.style.left = 800 + "px"
+        document.body.background = "cookiemonster3.jpg";
+
+    }
+
+
+
+}
+
+</script>
+   
+</body>
+</html>
